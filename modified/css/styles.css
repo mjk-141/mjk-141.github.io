@@ -106,6 +106,13 @@ address {
   line-height: inherit;
 }
 
+canvas {
+    width: 500px;
+    padding-left: 165px;
+}
+
+
+
 ol,
 ul,
 dl {
