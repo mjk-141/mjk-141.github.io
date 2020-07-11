@@ -1,4 +1,4 @@
-// 배열 및 math 함수 사용
+// 7.3장의 배열 및 7.6장의 math 함수 사용
 var add1 = document.getElementsByClassName("btn btn-dark btn-social mx-2");
 
 function change() {
@@ -16,7 +16,7 @@ function change() {
     laptop.style.color = "#" + Math.round(Math.random() * 0xffffff).toString(16);
     lock.style.color = "#" + Math.round(Math.random() * 0xffffff).toString(16);
 }
-//7-4 Date
+//7.4장 Date객체 사용 및 10.3장의 타이머 사용
 function realTime() {
     var timer = document.getElementById("timer");
     var now = new Date();
@@ -24,7 +24,7 @@ function realTime() {
 }
 setInterval(realTime, 1000);
 
-//setTimeout
+//10.3장의 타이머 사용
 var timerID = null;
 
 function openwindow1(time) {
@@ -47,7 +47,7 @@ function load(URL) {
     var newWin = window.open(URL, "newWin", "left=300,top=300,width=1000,height=900");
 }
 
-// onblur와 onfocus
+// 9.6장의 onblur와 onfocus와 7.5장의 String 객체 사용
 function checkFilled1(obj1) {
     if (obj1.value == "") {
         var caution = new String("enter name!");
@@ -80,7 +80,7 @@ function checkFilled4(obj4) {
     }
 }
 
-//navigator 객체 사용
+//10.6장 navigator 객체 사용
 function show() {
     var text = "<b><span>코드 이름</span></b>: " + navigator.appCodeName + "<br>";
     text += "<b><span>브라우저 이름</span></b>: " + navigator.appName + "<br>";
@@ -105,7 +105,7 @@ function show() {
 }
 
 
-// 캔버스 시간
+//11장 캔버스 에니메이션 : 디지털 시계
 setInterval(clock, 1000);
 
 function clock() {
